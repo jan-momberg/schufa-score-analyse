@@ -1,0 +1,8 @@
+metric,value
+best_model,Random Forest
+test_roc_auc,0.6997568523430593
+approval_rate,0.7345
+default_rate_among_approved,0.09462219196732471
+total_profit,272216.4768
+avg_profit_per_applicant,136.1082384
+largest_income_group_gap,0.19400000000000006

@@ -1,0 +1,45 @@
+
+---
+
+# 2. `.gitignore`
+
+Kopiere das hier in deine `.gitignore`:
+
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# Data exports
+data/raw/*.csv
+data/processed/*.csv
+reports/*.csv
+reports/*.xlsx
+reports/*.pdf
+
+# Images / generated outputs
+images/*.png
+images/*.jpg
+images/*.jpeg
+
+# Temporary files
+*.log

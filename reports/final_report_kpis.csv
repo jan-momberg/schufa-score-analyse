@@ -1,0 +1,10 @@
+section,metric,value
+Portfolio,Portfolio Size,10000
+Portfolio,Observed Default Rate,0.1301
+Portfolio,Average Credit Amount,11950.005552999999
+Modell,Best Model,Random Forest
+Modell,Test ROC-AUC,0.6997568523430593
+Business Impact,Total Profit,272216.4768
+Business Impact,Average Profit per Applicant,136.1082384
+Fairness,Largest Income Group Gap,0.19400000000000006
+Strategie,Best Strategy,New Score

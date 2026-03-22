@@ -1,0 +1,107 @@
+
+==================================================
+FINAL MANAGEMENT REPORT
+==================================================
+
+
+EXECUTIVE SUMMARY
+
+Der analysierte Datensatz umfasst 10,000 Beobachtungen.
+Die beobachtete Default-Rate liegt bei 13.01%.
+
+Im Projekt werden drei Entscheidungslogiken gegenübergestellt:
+1. altes Score-System
+2. neues Score-System
+3. datengetriebenes ML-Modell
+
+Soweit die Ergebnisdateien vollständig vorliegen, ergibt sich folgendes Bild:
+- bestes Modell: Random Forest
+- Test ROC-AUC: 0.6998
+- ML Approval Rate: 73.45%
+- Default-Rate unter genehmigten Anträgen: 9.46%
+- Total Profit: 272,216.48
+- Durchschnittlicher Profit pro Antrag: 136.11
+
+Die profitabelste beobachtete Strategie ist:
+New Score mit einem Total Profit von 579,406.26.
+
+Der wirtschaftlich beste simulierte Threshold lautet:
+0.60 (Profit: 626,153.79).
+
+Zentrale Management-Aussage:
+Ein gutes Kreditentscheidungsmodell darf nicht nur eine hohe Vorhersagegüte besitzen,
+sondern muss gleichzeitig wirtschaftlich tragfähig, nachvollziehbar und fairness-seitig kontrollierbar sein.
+
+
+--------------------------------------------------
+BANK-PERSPEKTIVE
+--------------------------------------------------
+
+BANK-PERSPEKTIVE
+
+Für Banken ist das Projekt besonders relevant, weil es die Brücke zwischen Risikoanalyse
+und Geschäftsentscheidung schlägt. Es zeigt nicht nur, welche Kunden ausfallgefährdet sind,
+sondern auch, wie sich unterschiedliche Entscheidungslogiken auf Genehmigungsquote,
+Portfolioqualität und Profitabilität auswirken.
+
+Besonders stark:
+- Vergleich von altem und neuem Score
+- wirtschaftliche Bewertung von Strategien
+- Threshold-Steuerung
+- Fairness-Monitoring zwischen Gruppen
+
+
+--------------------------------------------------
+VERSICHERUNGS-PERSPEKTIVE
+--------------------------------------------------
+
+VERSICHERUNGS-PERSPEKTIVE
+
+Für Versicherungen ist die Methodik direkt übertragbar auf Underwriting,
+Pricing, Betrugserkennung und Kundensegmentierung. Besonders wertvoll ist,
+dass Modellgüte, wirtschaftlicher Effekt und Fairness nicht getrennt,
+sondern integriert bewertet werden.
+
+Besonders stark:
+- segmentbasierte Risikobetrachtung
+- Entscheidungssteuerung über Schwellenwerte
+- Governance- und Fairness-Perspektive
+
+
+--------------------------------------------------
+RECRUITER-PERSPEKTIVE
+--------------------------------------------------
+
+RECRUITER-PERSPEKTIVE
+
+Aus Recruiter-Sicht ist dieses Projekt stark, weil es weit über ein Standard-ML-Notebook hinausgeht.
+Es zeigt:
+- strukturierte Datenaufbereitung
+- Explorative Datenanalyse
+- Score-System-Vergleich
+- Modelltraining
+- Modellinterpretation
+- Fairness-Analyse
+- Business Impact
+- Management Reporting
+
+Damit wirkt das Projekt deutlich näher an realen Anforderungen in Bank, Versicherung und Risk Analytics.
+
+
+--------------------------------------------------
+EXECUTIVE RECOMMENDATION
+--------------------------------------------------
+- Die derzeit wirtschaftlich attraktivste Entscheidungslogik ist 'New Score', da sie den höchsten beobachteten Total Profit erzielt.
+- Für das ML-Modell erscheint ein Threshold von 0.60 als wirtschaftlich besonders interessant und sollte in einem kontrollierten Piloten geprüft werden.
+- Zwischen Einkommensgruppen besteht ein Approval-Gap von 19.40%. Dieser Unterschied sollte fachlich erklärt und regelmäßig überwacht werden.
+- Die operative Steuerung sollte nicht ausschließlich auf Accuracy oder ROC-AUC basieren, sondern auf einer kombinierten Sicht aus Risiko, Profitabilität und Fairness.
+- Vor produktivem Einsatz sollte ein Monitoring für Drift, Genehmigungsquote, Ausfallquote, Threshold-Stabilität und gruppenspezifische Fairness-Kennzahlen etabliert werden.
+
+--------------------------------------------------
+LIMITATIONS
+--------------------------------------------------
+- Die Analyse basiert möglicherweise auf synthetischen oder projekthaft vereinfachten Daten.
+- Die Profit-Logik beruht auf Annahmen und ersetzt keine vollständige betriebswirtschaftliche Kalkulation.
+- Fairness wurde nur für ausgewählte Gruppierungen betrachtet und nicht regulatorisch validiert.
+- Es wurde kein echtes produktives Monitoring über Zeit aufgebaut.
+- Makroökonomische Veränderungen, Zeitreihen-Effekte und Drift wurden nur eingeschränkt berücksichtigt.
