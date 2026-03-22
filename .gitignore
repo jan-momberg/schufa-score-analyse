@@ -1,4 +1,30 @@
+# macOS
+.DS_Store
 
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Optional: Daten NICHT tracken
+# (nur aktiv lassen, wenn du CSVs NICHT im Repo willst)
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Reports
+# reports/*.csv
+# reports/*.pdf
+
+# Images (optional)
+# images/*.png
+# images/*.jpg
 ---
 
 # 2. `.gitignore`
