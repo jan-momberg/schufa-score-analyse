@@ -185,6 +185,8 @@ Zugriff erfolgt nur über Einladung.
 
 ## 👨‍💻 Autor
 
+  Jan Momberg
+
 Projekt im Bereich:
 
 * Data Science
