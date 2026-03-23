@@ -130,16 +130,6 @@ reports/
 
 ---
 
-## ▶️ How to Run
-
-```bash
-git clone https://github.com/jan-momberg/schufa-score-analyse.git
-cd schufa-score-analyse
-pip install -r requirements.txt
-```
-
----
-
 ## 💼 Relevanz für Unternehmen
 
 Dieses Projekt ist direkt übertragbar auf:
