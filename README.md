@@ -47,7 +47,7 @@ Höhere Scores führen zu deutlich geringeren Ausfallraten → Score funktionier
 
 Niedriges Einkommen ist mit höherem Default-Risiko verbunden
 
-![Score vs Default](./images/score_vs_default.png)
+![Income Risk](./images/income_risk.png)
 
 ---
 
@@ -60,7 +60,7 @@ Wichtigste Einflussfaktoren im Modell:
 * Score
 * Liquidität
 
-![Income Risk](./images/income_risk.png)
+![Model Importance](./images/model_importance.png)
 
 ---
 
@@ -69,7 +69,7 @@ Wichtigste Einflussfaktoren im Modell:
 Die Wahl des Entscheidungs-Thresholds beeinflusst den Profit erheblich
 Optimaler Bereich liegt ungefähr zwischen **0.55 und 0.65**
 
-![Model Importance](./images/model_importance.png)
+![Business Impact](./images/business_impact.png)
 
 ---
 
