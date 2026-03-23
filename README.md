@@ -1,35 +1,28 @@
 # 💳 Credit Risk & Scoring Analysis
 
-End-to-end Data Science Projekt zur Analyse von Kreditentscheidungen, Scoring-Systemen und Ausfallrisiken.
-
-Dieses Projekt simuliert einen realistischen Entscheidungsprozess von Banken und zeigt, wie Daten, Machine Learning und Business-Logik zusammenwirken, um bessere Kreditentscheidungen zu treffen.
-
----
-
-## 🎯 Ziel des Projekts
-
-Ziel ist es zu verstehen:
-
-**Wie kann ein Kreditentscheidungssystem gleichzeitig Risiko minimieren, Profit maximieren und fair bleiben?**
-
-Dazu wird eine vollständige Analysepipeline aufgebaut:
-
-- Datengenerierung  
-- Datenbereinigung  
-- Explorative Analyse  
-- Score-Vergleich  
-- Machine Learning Modell  
-- Fairness & Business Impact  
+> End-to-End Data Science Projekt zur Optimierung von Kreditentscheidungen  
+> Fokus: **Risk Modeling, Profit Maximization und Fairness**
 
 ---
 
-## 🧠 Zentrale Business-Fragen
+## 🚀 Projektüberblick
 
-- Wie gut sagen Scores tatsächliche Kreditausfälle voraus?  
-- Ist das neue Score-System besser als das alte?  
-- Welche Faktoren treiben Risiko wirklich?  
-- Wo entstehen Fairness-Probleme?  
-- Welche Entscheidungsstrategie maximiert Profit?  
+Dieses Projekt simuliert einen realistischen Entscheidungsprozess in Banken und zeigt, wie **Datenanalyse, Machine Learning und Business-Logik** kombiniert werden, um bessere Kreditentscheidungen zu treffen.
+
+**Zentrale Fragestellung:**
+
+> Wie kann ein Kreditmodell Risiko minimieren, Profit maximieren und gleichzeitig fair bleiben?
+
+---
+
+## 🧠 Business Impact
+
+Dieses Projekt adressiert zentrale Herausforderungen im Banking:
+
+- 📉 Reduktion von Kreditausfällen (Default Risk)
+- 💰 Maximierung des erwarteten Profits
+- ⚖️ Analyse von Fairness und Bias im Scoring
+- 📊 Transparenz durch Modellinterpretation
 
 ---
 
@@ -37,61 +30,57 @@ Dazu wird eine vollständige Analysepipeline aufgebaut:
 
 ### 📉 Score vs Default Risk
 
-Höhere Scores führen zu deutlich geringeren Ausfallraten → Score funktioniert
+Höhere Scores führen zu deutlich geringeren Ausfallraten → das Scoring-Modell ist effektiv
 
-![Score vs Default](images/score_vs_default.png)
+<p align="center">
+  <img src="images/score_vs_default.png" width="700">
+</p>
 
 ---
 
 ### 💰 Income vs Risk
 
-Niedriges Einkommen ist mit höherem Default-Risiko verbunden
+Niedriges Einkommen ist signifikant mit höherem Default-Risiko verbunden
 
-![Income Risk](images/income_risk.png)
+<p align="center">
+  <img src="images/income_risk.png" width="700">
+</p>
 
 ---
 
 ### 🤖 Model Understanding (Feature Importance)
 
-Wichtigste Einflussfaktoren im Modell:
+Die wichtigsten Einflussfaktoren im Modell:
 
 - Debt-to-Income Ratio  
 - Einkommen  
-- Score  
+- Kredit-Score  
 - Liquidität  
 
-![Model Importance](images/model_importance.png)
+<p align="center">
+  <img src="images/model_importance.png" width="700">
+</p>
 
 ---
 
 ### 📈 Business Impact (Threshold Optimierung)
 
-Die Wahl des Entscheidungs-Thresholds beeinflusst den Profit erheblich  
-Optimaler Bereich liegt ungefähr zwischen **0.55 und 0.65**
+Die Wahl des Entscheidungs-Thresholds hat einen erheblichen Einfluss auf den Profit.  
+Der optimale Bereich liegt bei ca. **0.55 – 0.65**
 
-![Business Impact](images/business_impact.png)
-
----
-
-## 📈 Wichtigste Erkenntnisse
-
-- Das neue Score-System trennt Risiko-Gruppen besser als das alte  
-- Finanzielle Kennzahlen sind die wichtigsten Prädiktoren für Default  
-- Machine Learning verbessert Kreditentscheidungen signifikant  
-- Fairness und Profit stehen teilweise im Zielkonflikt  
-- Der Decision Threshold ist der wichtigste Business-Hebel  
+<p align="center">
+  <img src="images/business_impact.png" width="700">
+</p>
 
 ---
 
-## 💼 Business Value
+## 📈 Zentrale Erkenntnisse
 
-Dieses Projekt zeigt:
-
-- datengetriebene Kreditentscheidungen  
-- Kombination von Machine Learning und Business Logik  
-- Optimierung von Risiko und Profit  
-- Transparenz durch Modellinterpretation  
-- Anwendung auf reale Banking-Use-Cases  
+- Das neue Score-System trennt Risiko-Gruppen deutlich besser als das alte
+- Finanzielle Kennzahlen sind die stärksten Prädiktoren für Default
+- Machine Learning verbessert Kreditentscheidungen signifikant
+- Fairness und Profit stehen teilweise im Zielkonflikt
+- Der Decision Threshold ist der wichtigste Business-Hebel
 
 ---
 
@@ -114,3 +103,27 @@ data/
 
 images/
 reports/
+
+⚙️ Technologien
+Python (Pandas, NumPy, Scikit-learn)
+Data Visualization (Matplotlib, Seaborn)
+Machine Learning (Classification Models)
+Model Interpretation (Feature Importance)
+Business Simulation (Profit & Threshold Optimization)
+
+▶️ How to Run
+
+git clone https://github.com/jan-momberg/schufa-score-analyse.git
+cd schufa-score-analyse
+pip install -r requirements.txt
+
+💼 Relevanz für Unternehmen
+Dieses Projekt ist direkt übertragbar auf:
+Banken (Credit Risk & Scoring)
+Versicherungen (Risk Assessment)
+FinTechs (Automatisierte Kreditentscheidungen)
+
+
+👤 Autor
+Jan Momberg
+Data Science | Risk Analytics | Machine Learning
