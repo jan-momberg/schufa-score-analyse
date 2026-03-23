@@ -1,101 +1,114 @@
 # 💳 Credit Risk & Scoring Analysis
 
-> End-to-End Data Science Projekt zur Optimierung von Kreditentscheidungen  
-> Fokus: **Risk Modeling, Profit Maximization und Fairness**
+### End-to-End Machine Learning Projekt für datengetriebene Kreditentscheidungen
+
+> **Ziel:** Entwicklung eines Scoring-Systems zur **Risikominimierung**, **Profitmaximierung** und **Fairness-Analyse** im Kreditvergabeprozess
 
 ---
 
-## 🚀 Projektüberblick
+## 🧭 Problemstellung
 
-Dieses Projekt simuliert einen realistischen Entscheidungsprozess in Banken und zeigt, wie **Datenanalyse, Machine Learning und Business-Logik** kombiniert werden, um bessere Kreditentscheidungen zu treffen.
+Finanzinstitute stehen vor einem zentralen Zielkonflikt:
 
-**Zentrale Fragestellung:**
+* Kreditausfälle minimieren
+* Profit maximieren
+* Gleichzeitig faire Entscheidungen treffen
 
-> Wie kann ein Kreditmodell Risiko minimieren, Profit maximieren und gleichzeitig fair bleiben?
+**Kernfrage dieses Projekts:**
 
----
-
-## 🧠 Business Impact
-
-Dieses Projekt adressiert zentrale Herausforderungen im Banking:
-
-- 📉 Reduktion von Kreditausfällen (Default Risk)
-- 💰 Maximierung des erwarteten Profits
-- ⚖️ Analyse von Fairness und Bias im Scoring
-- 📊 Transparenz durch Modellinterpretation
+> Wie kann ein datengetriebenes Modell Kreditentscheidungen gleichzeitig **präziser**, **profitabler** und **fairer** machen als traditionelle Score-Systeme?
 
 ---
 
-## 📊 Key Insights
+## 💡 Lösungsansatz
 
-### 📉 Score vs Default Risk
+Dieses Projekt bildet eine **realistische End-to-End Credit Risk Pipeline** ab:
 
-Höhere Scores führen zu deutlich geringeren Ausfallraten → das Scoring-Modell ist effektiv
+1. **Datenaufbereitung & Feature Engineering**
+2. **Explorative Datenanalyse (EDA)**
+3. **Vergleich eines bestehenden Score-Systems**
+4. **Training eines Machine Learning Modells**
+5. **Modellinterpretation (Feature Importance)**
+6. **Business Simulation (Profit & Threshold Optimierung)**
+7. **Fairness-Analyse**
+8. **Management-tauglicher Final Report**
+
+---
+
+## 📊 Key Results (Business & Model Impact)
+
+### 📉 Deutlich bessere Risikotrennung
+
+Das neue Modell segmentiert Kunden signifikant besser nach Ausfallwahrscheinlichkeit als das Basissystem.
 
 <p align="center">
-  <img src="images/score_vs_default.png" width="700">
+  <img src="images/score_vs_default.png" width="750">
 </p>
 
 ---
 
-### 💰 Income vs Risk
+### 💰 Klare wirtschaftliche Hebel identifiziert
 
-Niedriges Einkommen ist signifikant mit höherem Default-Risiko verbunden
+* Einkommen und Debt-to-Income Ratio sind zentrale Treiber
+* Niedriges Einkommen → signifikant höheres Risiko
 
 <p align="center">
-  <img src="images/income_risk.png" width="700">
+  <img src="images/income_risk.png" width="750">
 </p>
 
 ---
 
-### 🤖 Model Understanding (Feature Importance)
+### 🤖 Modell ist erklärbar (kein Black Box Risiko)
 
-Die wichtigsten Einflussfaktoren im Modell:
+Top Features im Modell:
 
-- Debt-to-Income Ratio  
-- Einkommen  
-- Kredit-Score  
-- Liquidität  
+* Debt-to-Income Ratio
+* Einkommen
+* Kredit-Score
+* Liquidität
 
 <p align="center">
-  <img src="images/model_importance.png" width="700">
+  <img src="images/model_importance.png" width="750">
 </p>
 
 ---
 
-### 📈 Business Impact (Threshold Optimierung)
+### 📈 Profit-Optimierung durch Threshold-Steuerung
 
-Die Wahl des Entscheidungs-Thresholds hat einen erheblichen Einfluss auf den Profit.  
-Der optimale Bereich liegt bei ca. **0.55 – 0.65**
+Ein kritischer Business-Hebel:
+
+> Der optimale Decision Threshold liegt bei **~0.55 – 0.65**
+
+→ Direkter Einfluss auf Profitabilität und Risikoexposition
 
 <p align="center">
-  <img src="images/business_impact.png" width="700">
+  <img src="images/business_impact.png" width="750">
 </p>
 
 ---
 
-## 📈 Zentrale Erkenntnisse
+## 🧠 Zentrale Erkenntnisse
 
-- Das neue Score-System trennt Risiko-Gruppen deutlich besser als das alte
-- Finanzielle Kennzahlen sind die stärksten Prädiktoren für Default
-- Machine Learning verbessert Kreditentscheidungen signifikant
-- Fairness und Profit stehen teilweise im Zielkonflikt
-- Der Decision Threshold ist der wichtigste Business-Hebel
+* ✅ Machine Learning übertrifft klassische Scorekarten deutlich
+* ✅ Finanzielle Kennzahlen dominieren die Risikoprognose
+* ⚖️ Fairness vs. Profit stellt einen realen Zielkonflikt dar
+* 🎯 Threshold-Tuning ist der wichtigste operative Hebel
+* 📊 Modellentscheidungen sind transparent und interpretierbar
 
 ---
 
-## 🏗️ Projektstruktur
+## 🏗️ Projektarchitektur
 
 ```text
 notebooks/
-├── 01_data_generation.ipynb
-├── 02_data_cleaning.ipynb
-├── 03_eda.ipynb
-├── 04_scoring_comparison.ipynb
-├── 05_default_risk_model.ipynb
-├── 06_model_interpretation.ipynb
+├── 01_data_generation.ipynb        # Simulation realistischer Kreditdaten
+├── 02_data_cleaning.ipynb         # Datenbereinigung & Feature Engineering
+├── 03_eda.ipynb                  # Explorative Analyse
+├── 04_scoring_comparison.ipynb   # Vergleich Alt vs. Neu Score
+├── 05_default_risk_model.ipynb   # ML-Modell (Classification)
+├── 06_model_interpretation.ipynb # Feature Importance & Explainability
 ├── 07_fairness_and_business_impact.ipynb
-└── 08_final_report.ipynb
+├── 08_final_report.ipynb         # Management Summary
 
 data/
 ├── raw/
@@ -103,30 +116,42 @@ data/
 
 images/
 reports/
+```
 
+---
 
+## ⚙️ Technologien
 
+* Python (Pandas, NumPy, Scikit-learn)
+* Data Visualization (Matplotlib, Seaborn)
+* Machine Learning (Classification Models)
+* Model Interpretation (Feature Importance)
+* Business Simulation (Profit & Threshold Optimization)
 
-⚙️ Technologien
-Python (Pandas, NumPy, Scikit-learn)
-Data Visualization (Matplotlib, Seaborn)
-Machine Learning (Classification Models)
-Model Interpretation (Feature Importance)
-Business Simulation (Profit & Threshold Optimization)
+---
 
-▶️ How to Run
+## ▶️ How to Run
 
+```bash
 git clone https://github.com/jan-momberg/schufa-score-analyse.git
 cd schufa-score-analyse
 pip install -r requirements.txt
+```
 
-💼 Relevanz für Unternehmen
+---
+
+## 💼 Relevanz für Unternehmen
+
 Dieses Projekt ist direkt übertragbar auf:
-Banken (Credit Risk & Scoring)
-Versicherungen (Risk Assessment)
-FinTechs (Automatisierte Kreditentscheidungen)
 
+* Banken (Credit Risk & Scoring)
+* Versicherungen (Risk Assessment)
+* FinTechs (Automatisierte Kreditentscheidungen)
 
-👤 Autor
-Jan Momberg
+---
+
+## 👤 Autor
+
+**Jan Momberg**
 Data Science | Risk Analytics | Machine Learning
+
