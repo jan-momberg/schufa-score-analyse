@@ -104,6 +104,9 @@ data/
 images/
 reports/
 
+
+
+
 ⚙️ Technologien
 Python (Pandas, NumPy, Scikit-learn)
 Data Visualization (Matplotlib, Seaborn)
