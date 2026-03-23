@@ -1,37 +1,6 @@
 # macOS
 .DS_Store
 
-# Jupyter
-.ipynb_checkpoints/
-
-# Python
-__pycache__/
-*.pyc
-
-# Virtual environments
-venv/
-.venv/
-env/
-
-# Optional: Daten NICHT tracken
-# (nur aktiv lassen, wenn du CSVs NICHT im Repo willst)
-# data/raw/*.csv
-# data/processed/*.csv
-
-# Reports
-# reports/*.csv
-# reports/*.pdf
-
-# Images (optional)
-# images/*.png
-# images/*.jpg
----
-
-# 2. `.gitignore`
-
-Kopiere das hier in deine `.gitignore`:
-
-```gitignore
 # Python
 __pycache__/
 *.pyc
@@ -46,26 +15,27 @@ venv/
 .venv/
 env/
 
-# OS / Editor
-.DS_Store
-Thumbs.db
+# IDE / Editor
 .vscode/
 .idea/
+Thumbs.db
 
 # Environment files
 .env
 
-# Data exports
-data/raw/*.csv
-data/processed/*.csv
-reports/*.csv
-reports/*.xlsx
-reports/*.pdf
+# Optional: Daten nicht tracken
+# data/raw/*.csv
+# data/processed/*.csv
 
-# Images / generated outputs
-images/*.png
-images/*.jpg
-images/*.jpeg
+# Reports (optional)
+# reports/*.csv
+# reports/*.xlsx
+# reports/*.pdf
 
-# Temporary files
+# Images NICHT ignorieren (wichtig!)
+# images/*.png
+# images/*.jpg
+# images/*.jpeg
+
+# Logs
 *.log
