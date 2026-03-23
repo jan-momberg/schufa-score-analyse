@@ -1,38 +1,33 @@
-# 💳 Credit Risk & Scoring Analysis (Schufa-Style Project)
+# 💳 Credit Risk & Scoring Analysis
 
 End-to-end Data Science Projekt zur Analyse von Kreditentscheidungen, Scoring-Systemen und Ausfallrisiken.
 
-Dieses Projekt simuliert einen realistischen Entscheidungsprozess von Banken und zeigt, wie Daten, Modelle und Business-Logik zusammenwirken.
+Dieses Projekt simuliert einen realistischen Entscheidungsprozess von Banken und zeigt, wie Daten, Machine Learning und Business-Logik zusammenwirken, um bessere Kreditentscheidungen zu treffen.
 
 ---
 
-## 🚀 Live Capabilities
+## 🎯 Ziel des Projekts
 
-* Credit Risk Modeling
-* Scoring System Evaluation
-* Business Impact Optimization
-* Fairness Analysis
+Ziel ist es zu verstehen:
 
----
+**Wie kann ein Kreditentscheidungssystem gleichzeitig Risiko minimieren, Profit maximieren und fair bleiben?**
 
-## 📌 Projektüberblick
+Dazu wird eine vollständige Analysepipeline aufgebaut:
 
-Ziel dieses Projekts ist es, ein vollständiges Kreditrisiko-System zu analysieren:
-
-* Entwicklung eines synthetischen Kreditdatensatzes
-* Vergleich eines alten vs. neuen Score-Systems
-* Aufbau eines Default-Risk-Modells
-* Interpretation der Modellentscheidungen
-* Analyse von Fairness und Business Impact
-* Ableitung von Geschäftsentscheidungen
+* Datengenerierung
+* Datenbereinigung
+* Explorative Analyse
+* Score-Vergleich
+* Machine Learning Modell
+* Fairness & Business Impact
 
 ---
 
-## 🧠 Business-Fragestellungen
+## 🧠 Zentrale Business-Fragen
 
 * Wie gut sagen Scores tatsächliche Kreditausfälle voraus?
 * Ist das neue Score-System besser als das alte?
-* Welche Faktoren treiben Kreditrisiko wirklich?
+* Welche Faktoren treiben Risiko wirklich?
 * Wo entstehen Fairness-Probleme?
 * Welche Entscheidungsstrategie maximiert Profit?
 
@@ -40,21 +35,63 @@ Ziel dieses Projekts ist es, ein vollständiges Kreditrisiko-System zu analysier
 
 ## 📊 Key Insights
 
-### Score vs Default Risk
+### 📉 Score vs Default Risk
+
+Höhere Scores führen zu deutlich geringeren Ausfallraten → Score funktioniert
 
 ![Score vs Default](images/score_vs_default.png)
 
-### Income & Risk Relationship
+---
+
+### 💰 Income vs Risk
+
+Niedriges Einkommen ist mit höherem Default-Risiko verbunden
 
 ![Income Risk](images/income_risk.png)
 
-### Model Performance / Feature Importance
+---
 
-![Model](images/model_importance.png)
+### 🤖 Model Understanding (Feature Importance)
 
-### Business Impact (Threshold Analysis)
+Wichtigste Einflussfaktoren im Modell:
+
+* Debt-to-Income Ratio
+* Einkommen
+* Score
+* Liquidität
+
+![Model Importance](images/model_importance.png)
+
+---
+
+### 📈 Business Impact (Threshold Optimierung)
+
+Die Wahl des Entscheidungs-Thresholds beeinflusst den Profit erheblich
+Optimaler Bereich liegt ungefähr zwischen **0.55 und 0.65**
 
 ![Business Impact](images/business_impact.png)
+
+---
+
+## 📈 Wichtigste Erkenntnisse
+
+* Das neue Score-System trennt Risiko-Gruppen besser als das alte
+* Finanzielle Kennzahlen sind die wichtigsten Prädiktoren für Default
+* Machine Learning verbessert Kreditentscheidungen signifikant
+* Fairness und Profit stehen teilweise im Zielkonflikt
+* Der Decision Threshold ist der wichtigste Business-Hebel
+
+---
+
+## 💼 Business Value
+
+Dieses Projekt zeigt:
+
+* datengetriebene Kreditentscheidungen
+* Kombination von Machine Learning und Business Logik
+* Optimierung von Risiko und Profit
+* Transparenz durch Modellinterpretation
+* Anwendung auf reale Banking-Use-Cases
 
 ---
 
@@ -62,7 +99,6 @@ Ziel dieses Projekts ist es, ein vollständiges Kreditrisiko-System zu analysier
 
 ```
 notebooks/
-│
 ├── 01_data_generation.ipynb
 ├── 02_data_cleaning.ipynb
 ├── 03_eda.ipynb
@@ -84,72 +120,14 @@ reports/
 
 ## 🔄 Analyse-Pipeline
 
-### 1. Data Generation
-
-* Simulation realistischer Kreditdaten
-* Features: Einkommen, Schulden, Scores, Verhalten
-* Generierung von Default-Fällen
-
-### 2. Data Cleaning
-
-* Bereinigung und Validierung
-* Feature Engineering
-* Datenkonsistenz
-
-### 3. Exploratory Data Analysis
-
-* Verteilungen
-* Default-Raten
-* Risiko-Treiber
-
-### 4. Scoring Comparison
-
-* Vergleich: `old_score` vs `new_score`
-* Analyse von Signalstärke und möglichen Bias
-
-### 5. Default Risk Model
-
-* Klassifikationsmodell zur Vorhersage von Ausfällen
-* Nutzung finanzieller und Score-Variablen
-
-### 6. Model Interpretation
-
-* Feature Importance
-* Einfluss einzelner Variablen
-* Nachvollziehbarkeit der Entscheidungen
-
-### 7. Fairness & Business Impact
-
-* Analyse nach Gruppen (z. B. Einkommen)
-* False Positives / False Negatives
-* Profit-Optimierung
-
-### 8. Final Report
-
-* Management Summary
-* KPI-Analyse
-* Handlungsempfehlungen
-
----
-
-## 📈 Ergebnisse (Kurzfassung)
-
-* Das neue Score-System zeigt eine bessere Trennung von Risiko-Gruppen
-* Einkommen und Liquidität sind zentrale Treiber für Default
-* Negative Einträge haben starken Einfluss auf Entscheidungen
-* Bestimmte Gruppen zeigen erhöhte Fehlklassifikationen
-* Optimierte Thresholds können Profit signifikant steigern
-
----
-
-## 💼 Business Value
-
-Dieses Projekt zeigt:
-
-* Wie datengetriebene Kreditentscheidungen funktionieren
-* Wie Modelle in echte Geschäftsentscheidungen übersetzt werden
-* Wie Fairness und Profit im Konflikt stehen können
-* Wie man Risiko systematisch steuert
+1. Data Generation → realistischer Kreditdatensatz
+2. Data Cleaning → Datenqualität und Konsistenz
+3. EDA → Muster und Risiko verstehen
+4. Scoring Comparison → Score-Systeme vergleichen
+5. Modeling → Default vorhersagen
+6. Interpretation → Modell erklären
+7. Business Impact → Profit optimieren
+8. Final Report → Management Summary
 
 ---
 
@@ -157,40 +135,34 @@ Dieses Projekt zeigt:
 
 ```
 pip install -r requirements.txt
-```
-
-Start:
-
-```
 jupyter notebook
 ```
 
 ---
 
-## 🔐 Hinweis
-
-Dieses Repository ist aktuell privat und dient als Portfolio-Projekt.
-Zugriff erfolgt nur über Einladung.
-
----
-
 ## 🚀 Nächste Schritte
 
-* Integration in ein Streamlit Dashboard
-* Echtzeit-Datenanalyse
-* Deployment als Entscheidungs-Tool
-* Integration eines AI-Assistenten
+* Streamlit Dashboard entwickeln
+* Echtzeit-Daten integrieren
+* Deployment als Decision Tool
+* AI-basierte Entscheidungsunterstützung
 
 ---
 
 ## 👨‍💻 Autor
 
-  Jan Momberg
+Jan Momberg
 
-Projekt im Bereich:
+Fokusbereiche:
 
 * Data Science
-* Kreditrisiko
+* Credit Risk
 * Machine Learning
 * Business Analytics
+
+---
+
+## 🔐 Hinweis
+
+Dieses Projekt wird als Portfolio-Projekt genutzt und ist aktuell privat bzw. selektiv freigegeben.
 
