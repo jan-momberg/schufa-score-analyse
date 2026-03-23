@@ -39,7 +39,7 @@ Dazu wird eine vollständige Analysepipeline aufgebaut:
 
 Höhere Scores führen zu deutlich geringeren Ausfallraten → Score funktioniert
 
-images/score_vs_default.png
+![Score vs Default](images/score_vs_default.png)
 
 ---
 
@@ -47,7 +47,7 @@ images/score_vs_default.png
 
 Niedriges Einkommen ist mit höherem Default-Risiko verbunden
 
-images/income_risk.png
+![Income Risk](images/income_risk.png)
 
 ---
 
@@ -60,7 +60,7 @@ Wichtigste Einflussfaktoren im Modell:
 - Score  
 - Liquidität  
 
-images/model_importance.png
+![Model Importance](images/model_importance.png)
 
 ---
 
@@ -69,7 +69,7 @@ images/model_importance.png
 Die Wahl des Entscheidungs-Thresholds beeinflusst den Profit erheblich  
 Optimaler Bereich liegt ungefähr zwischen **0.55 und 0.65**
 
-images/business_impact.png
+![Business Impact](images/business_impact.png)
 
 ---
 
